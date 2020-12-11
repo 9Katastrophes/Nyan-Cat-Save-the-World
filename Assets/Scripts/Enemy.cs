@@ -12,22 +12,24 @@ public class Enemy : MonoBehaviour
 
     public GameObject enemyBulletPrefab;
     public float fireRate = 5.0f;
+    public float randomFireOffset = 0.0f;
     private float timeLeftToShoot;
 
     // Start is called before the first frame update
     void Start()
     {
-        timeLeftToShoot = fireRate;
+        timeLeftToShoot = fireRate + Random.Range(0.0f, randomFireOffset);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Mathf.Abs(transform.position.y) > maxOffset)
+        if (Mathf.Abs(transform.position.y) >= maxOffset)
             direction = -direction;
 
         Vector3 currentPosition = transform.position;
         currentPosition.y += direction * speed * Time.deltaTime;
+        currentPosition.y = Mathf.Clamp(currentPosition.y, -maxOffset, maxOffset);
         transform.position = currentPosition;
 
         if (timeLeftToShoot > 0)
@@ -37,7 +39,7 @@ public class Enemy : MonoBehaviour
         else
         {
             Fire();
-            timeLeftToShoot = fireRate;
+            timeLeftToShoot = fireRate + Random.Range(0.0f, randomFireOffset);
         }
     }
 
