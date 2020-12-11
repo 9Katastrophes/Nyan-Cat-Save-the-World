@@ -28,9 +28,28 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+            Die();
+        }
+    }
+
     public void Shoot()
     {
         Instantiate(playerBulletPrefab, this.transform);
         SoundManager.S.PlayPlayerShootingSound();
+    }
+
+    public void Die()
+    {
+        Debug.Log("Player died!");
+        GetComponent<BoxCollider2D>().enabled = false;
+        speed = 0;
+        GetComponent<Animator>().SetTrigger("Death");
+        SoundManager.S.PlayPlayerDeathSound();
+        //TODO: go to game end state where everything freezes except for player
     }
 }

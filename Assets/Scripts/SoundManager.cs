@@ -13,6 +13,8 @@ public class SoundManager : MonoBehaviour
     public float playerShootingVolume = 1.0f;
     public AudioClip enemyDeathSound;
     public float enemyDeathVolume = 1.0f;
+    public AudioClip playerDeathSound;
+    public float playerDeathVolume = 1.0f;
 
     private void Awake()
     {
@@ -46,5 +48,10 @@ public class SoundManager : MonoBehaviour
     public void PlayEnemyDeathSound()
     {
         audio.PlayOneShot(enemyDeathSound, enemyDeathVolume);
+    }
+
+    public void PlayPlayerDeathSound()
+    {
+        audio.PlayOneShot(playerDeathSound, playerDeathVolume);
     }
 }

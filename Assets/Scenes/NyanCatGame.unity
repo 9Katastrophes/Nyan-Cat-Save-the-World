@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 440451221}
   - component: {fileID: 440451222}
   - component: {fileID: 440451223}
+  - component: {fileID: 440451224}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -448,6 +449,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!61 &440451224
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440451218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04240966, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.0625, y: 1.3125}
+    newSize: {x: 2.0625, y: 1.3125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9776807, y: 1.3125}
+  m_EdgeRadius: 0
 --- !u!1 &482438841
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6242690691203755102, guid: ff0cec7db63734d9c943456b6f8ba40a, type: 3}
+      propertyPath: playerDeathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: fe6a9bcab1c01453da6d0c13203ae932, type: 3}
     - target: {fileID: 6242690691203755103, guid: ff0cec7db63734d9c943456b6f8ba40a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 749.4424
