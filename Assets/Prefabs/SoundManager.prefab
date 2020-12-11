@@ -51,6 +51,8 @@ MonoBehaviour:
   playerShootingVolume: 0.8
   enemyDeathSound: {fileID: 8300000, guid: 6fde8ab4adbc94110847c9e7e7224ec2, type: 3}
   enemyDeathVolume: 1
+  playerDeathSound: {fileID: 8300000, guid: fe6a9bcab1c01453da6d0c13203ae932, type: 3}
+  playerDeathVolume: 1
 --- !u!82 &6242690691203755073
 AudioSource:
   m_ObjectHideFlags: 0

@@ -569,10 +569,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6242690691203755102, guid: ff0cec7db63734d9c943456b6f8ba40a, type: 3}
-      propertyPath: playerDeathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: fe6a9bcab1c01453da6d0c13203ae932, type: 3}
     - target: {fileID: 6242690691203755103, guid: ff0cec7db63734d9c943456b6f8ba40a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 749.4424
