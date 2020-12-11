@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
     public float speed;
     public float maxOffset;
     public GameObject playerBulletPrefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isAlive = true;
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 currentPosition = transform.position;
@@ -43,9 +39,15 @@ public class Player : MonoBehaviour
         SoundManager.S.PlayPlayerShootingSound();
     }
 
+    public bool isPlayerAlive()
+    {
+        return isAlive;
+    }
+
     public void Die()
     {
         Debug.Log("Player died!");
+        isAlive = false;
         GetComponent<BoxCollider2D>().enabled = false;
         speed = 0;
         GetComponent<Animator>().SetTrigger("Death");
