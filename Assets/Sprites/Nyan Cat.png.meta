@@ -1,0 +1,994 @@
+fileFormatVersion: 2
+guid: 967f6ce1923a744d5becaa538bdeb8f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6419465209183139351
+    second: Nyan Cat_0
+  - first:
+      213: -4925255396022425353
+    second: Nyan Cat_1
+  - first:
+      213: -5818090282868904607
+    second: Nyan Cat_2
+  - first:
+      213: 1401028571739169903
+    second: Nyan Cat_3
+  - first:
+      213: 6116305150011892326
+    second: Nyan Cat_4
+  - first:
+      213: -4908124247993895333
+    second: Nyan Cat_5
+  - first:
+      213: -2683948284753527104
+    second: Nyan Cat_6
+  - first:
+      213: 1474237401299738178
+    second: Nyan Cat_7
+  - first:
+      213: -895235915360916849
+    second: Nyan Cat_8
+  - first:
+      213: -296891808498482210
+    second: Nyan Cat_9
+  - first:
+      213: 8022839347468692199
+    second: Nyan Cat_10
+  - first:
+      213: 3286100217733152841
+    second: Nyan Cat_11
+  - first:
+      213: -5208307500335532852
+    second: Nyan Cat_12
+  - first:
+      213: -9216248679141235982
+    second: Nyan Cat_13
+  - first:
+      213: -2066873470245553631
+    second: Nyan Cat_14
+  - first:
+      213: 4536216485411880397
+    second: Nyan Cat_15
+  - first:
+      213: 877721141117987588
+    second: Nyan Cat_16
+  - first:
+      213: -8363323896380178495
+    second: Nyan Cat_17
+  - first:
+      213: -5919078093357597273
+    second: Nyan Cat_18
+  - first:
+      213: -2868546119352869592
+    second: Nyan Cat_19
+  - first:
+      213: -1057301067051221953
+    second: Nyan Cat_20
+  - first:
+      213: 5569787391662919065
+    second: Nyan Cat_21
+  - first:
+      213: -2143897958282208915
+    second: Nyan Cat_22
+  - first:
+      213: -4315878753765404433
+    second: Nyan Cat_23
+  - first:
+      213: -4704874316720290794
+    second: Nyan Cat_24
+  - first:
+      213: 1537042563100794407
+    second: Nyan Cat_25
+  - first:
+      213: -7074869967914650277
+    second: Nyan Cat_26
+  - first:
+      213: -2793788033496903085
+    second: Nyan Cat_27
+  - first:
+      213: 8967801318498188212
+    second: Nyan Cat_28
+  - first:
+      213: -6428798972076537327
+    second: Nyan Cat_29
+  - first:
+      213: -3831524270498645532
+    second: Nyan Cat_30
+  - first:
+      213: -6241691946593712849
+    second: Nyan Cat_31
+  - first:
+      213: -2575461712963437510
+    second: Nyan Cat_32
+  - first:
+      213: -4234103931489200105
+    second: Nyan Cat_33
+  - first:
+      213: 6532637216308761585
+    second: Nyan Cat_34
+  - first:
+      213: -1510865458408585524
+    second: Nyan Cat_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nyan Cat_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 372
+        width: 145
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e909ae676a79e6a0800000000000000
+      internalID: -6419465209183139351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 372
+        width: 148
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8e10cff4af5abb0800000000000000
+      internalID: -4925255396022425353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 369
+        width: 147
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d627a96bdf14fa0800000000000000
+      internalID: -5818090282868904607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 367
+        width: 147
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64afa22014717310800000000000000
+      internalID: 1401028571739169903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_4
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 367
+        width: 149
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662e95cd02b71e450800000000000000
+      internalID: 6116305150011892326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_5
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 368
+        width: 144
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b7d43007d2ebb0800000000000000
+      internalID: -4908124247993895333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_6
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 368
+        width: 279
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce3fb35143b0cad0800000000000000
+      internalID: -2683948284753527104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 277
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ed01b0b1b857410800000000000000
+      internalID: 1474237401299738178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 276
+        width: 68
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aadba9dab7393f0800000000000000
+      internalID: -895235915360916849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 274
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed389b1297a31ebf0800000000000000
+      internalID: -296891808498482210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 275
+        width: 68
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eae5e331e9d65f60800000000000000
+      internalID: 8022839347468692199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_11
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 276
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940815eccb29a9d20800000000000000
+      internalID: 3286100217733152841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_12
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 275
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc47f795cef58b7b0800000000000000
+      internalID: -5208307500335532852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 276
+        width: 63
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2af16f7ae491080800000000000000
+      internalID: -9216248679141235982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_14
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 274
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ab552978df053e0800000000000000
+      internalID: -2066873470245553631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_15
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 274
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdfe3d0cd0e3fe30800000000000000
+      internalID: 4536216485411880397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_16
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 274
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b203c3aba4e2c00800000000000000
+      internalID: 877721141117987588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_17
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 273
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf39be1a318feb80800000000000000
+      internalID: -8363323896380178495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_18
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 270
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adbf9fa5d53bdda0800000000000000
+      internalID: -5919078093357597273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_19
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 272
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d952ea080e038d0800000000000000
+      internalID: -2868546119352869592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_20
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 273
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c35c50846b351f0800000000000000
+      internalID: -1057301067051221953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 200
+        width: 80
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d848a6f1cdb4d40800000000000000
+      internalID: 5569787391662919065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_22
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 203
+        width: 78
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6957e17a285f32e0800000000000000
+      internalID: -2143897958282208915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 203
+        width: 78
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe05824d32bea14c0800000000000000
+      internalID: -4315878753765404433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_24
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 203
+        width: 78
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61447078cbde4beb0800000000000000
+      internalID: -4704874316720290794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 90
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e574a411ca45510800000000000000
+      internalID: 1537042563100794407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 92
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b553e5a9f3301dd90800000000000000
+      internalID: -7074869967914650277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_27
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 91
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3521eade5987a39d0800000000000000
+      internalID: -2793788033496903085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_28
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 90
+        width: 67
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb3d5529c7047c70800000000000000
+      internalID: 8967801318498188212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_29
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 89
+        width: 68
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a4bf8656158c6a0800000000000000
+      internalID: -6428798972076537327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_30
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 90
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9f3ace9f0b3dac0800000000000000
+      internalID: -3831524270498645532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_31
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 91
+        width: 67
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f258dd59e3e0169a0800000000000000
+      internalID: -6241691946593712849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 90
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cf13aa73f124cd0800000000000000
+      internalID: -2575461712963437510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_33
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 22
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718508558e07d35c0800000000000000
+      internalID: -4234103931489200105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 21
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f39494dfe698aa50800000000000000
+      internalID: 6532637216308761585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nyan Cat_35
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 21
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc60628ded3580be0800000000000000
+      internalID: -1510865458408585524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
