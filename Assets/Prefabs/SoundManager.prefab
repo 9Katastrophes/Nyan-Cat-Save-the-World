@@ -47,6 +47,10 @@ MonoBehaviour:
   audio: {fileID: 6242690691203755073}
   buttonSound: {fileID: 8300000, guid: e9c712e064ad34cdc9cffffe7d220649, type: 3}
   buttonVolume: 0.5
+  playerShootingSound: {fileID: 8300000, guid: e9c712e064ad34cdc9cffffe7d220649, type: 3}
+  playerShootingVolume: 0.8
+  enemyDeathSound: {fileID: 8300000, guid: 6fde8ab4adbc94110847c9e7e7224ec2, type: 3}
+  enemyDeathVolume: 1
 --- !u!82 &6242690691203755073
 AudioSource:
   m_ObjectHideFlags: 0

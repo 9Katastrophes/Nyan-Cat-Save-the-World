@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager S;
 
+    public int score = 0;
+
     // secret settings
     public bool infiniteMode = false;
 
@@ -40,5 +42,10 @@ public class GameManager : MonoBehaviour
     {
         infiniteMode = !infiniteMode;
         Debug.Log("Infinite Mode: " + infiniteMode.ToString());
+    }
+
+    public void AwardPoints(int points)
+    {
+        score += points;
     }
 }

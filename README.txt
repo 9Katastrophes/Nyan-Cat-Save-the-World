@@ -1,8 +1,10 @@
 Asset Attributions
 
 Nyan Cat Sprites: https://www.spriters-resource.com/pc_computer/nyancatlostinspace/sheet/139234/
-Menu Starry Background: http://pixelartmaker.com/art/ccf4ad8ac3d50e0
 Pepper Sprites: https://www.spriters-resource.com/mobile/cookierunovenbreak/sheet/129453/
+Fireball Sprite: https://www.pikpng.com/downpngs/obbwbx_fireball-clipart-pixel-sprite-fireball-png-gif-pixel/
+Menu Starry Background: http://pixelartmaker.com/art/ccf4ad8ac3d50e0
+Game Background: https://imgur.com/gallery/z4Qqi/comment/1148689183
 
 Pew Sound: https://freesound.org/people/ani_music/sounds/219619/
 Nyan Cat Music: https://www.youtube.com/watch?v=QH2-TGUlwu4&t=83s&ab_channel=NyanCat

@@ -9,6 +9,10 @@ public class SoundManager : MonoBehaviour
     public AudioSource audio;
     public AudioClip buttonSound;
     public float buttonVolume = 1.0f;
+    public AudioClip playerShootingSound;
+    public float playerShootingVolume = 1.0f;
+    public AudioClip enemyDeathSound;
+    public float enemyDeathVolume = 1.0f;
 
     private void Awake()
     {
@@ -32,5 +36,15 @@ public class SoundManager : MonoBehaviour
     public void PlayButtonSound()
     {
         audio.PlayOneShot(buttonSound, buttonVolume);
+    }
+
+    public void PlayPlayerShootingSound()
+    {
+        audio.PlayOneShot(playerShootingSound, playerShootingVolume);
+    }
+
+    public void PlayEnemyDeathSound()
+    {
+        audio.PlayOneShot(enemyDeathSound, enemyDeathVolume);
     }
 }

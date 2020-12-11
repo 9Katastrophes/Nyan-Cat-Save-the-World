@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject bullet = Instantiate(playerBulletPrefab, this.transform);
+        Instantiate(playerBulletPrefab, this.transform);
+        SoundManager.S.PlayPlayerShootingSound();
     }
 }
