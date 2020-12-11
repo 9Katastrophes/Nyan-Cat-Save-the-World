@@ -45,7 +45,7 @@ public class ButtonManager : MonoBehaviour
     public void btn_Play()
     {
         SoundManager.S.PlayButtonSound();
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("NyanCatGame");
     }
 
     public void btn_Instructions()

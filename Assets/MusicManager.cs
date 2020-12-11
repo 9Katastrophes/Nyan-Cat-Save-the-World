@@ -27,10 +27,20 @@ public class MusicManager : MonoBehaviour
 
     void Start()
     {
+        SceneManager.activeSceneChanged += ChangeMusic;
+
         audio = GetComponent<AudioSource>();
         if (SceneManager.GetActiveScene().name == "NyanCatGame")
             PlayMusic("game");
         else
+            PlayMusic("menu");
+    }
+
+    private void ChangeMusic(Scene current, Scene next)
+    {
+        if (current.name != "NyanCatGame" && next.name == "NyanCatGame")
+            PlayMusic("game");
+        if (current.name == "NyanCatGame" && next.name != "NyanCatGame")
             PlayMusic("menu");
     }
 
