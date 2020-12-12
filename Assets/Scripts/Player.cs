@@ -9,8 +9,6 @@ public class Player : MonoBehaviour
     public float maxOffset;
     public GameObject playerBulletPrefab;
 
-    private bool isAlive = true;
-
     void Update()
     {
         Vector3 currentPosition = transform.position;
@@ -39,19 +37,18 @@ public class Player : MonoBehaviour
         SoundManager.S.PlayPlayerShootingSound();
     }
 
-    public bool isPlayerAlive()
+    public void DisableMovement()
     {
-        return isAlive;
+        GetComponent<Player>().enabled = false;
     }
 
     public void Die()
     {
         Debug.Log("Player died!");
-        isAlive = false;
         GetComponent<BoxCollider2D>().enabled = false;
-        speed = 0;
+        GetComponent<Player>().enabled = false;
         GetComponent<Animator>().SetTrigger("Death");
         SoundManager.S.PlayPlayerDeathSound();
-        //TODO: go to game end state where everything freezes except for player
+        GameManager.S.GameOver(false);
     }
 }

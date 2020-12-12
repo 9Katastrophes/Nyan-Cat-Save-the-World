@@ -43,4 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92184c1bcffd247608456b4a69ea6b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
+  scoreOverlay: {fileID: 0}
+  messageOverlay: {fileID: 0}
+  restartButton: {fileID: 0}
+  menuButton: {fileID: 0}
+  score: 0
   infiniteMode: 0

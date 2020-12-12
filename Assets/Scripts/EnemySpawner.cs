@@ -42,8 +42,7 @@ public class EnemySpawner : MonoBehaviour
         }
         if (totalEnemiesToSpawn == 0 && enemiesAlive == 0)
         {
-            // player has won the game
-            Debug.Log("All enemies defeated!");
+            GameManager.S.GameOver(true);
         }
     }
 

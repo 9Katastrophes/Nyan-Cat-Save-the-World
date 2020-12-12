@@ -46,6 +46,7 @@ public class ButtonManager : MonoBehaviour
     {
         SoundManager.S.PlayButtonSound();
         SceneManager.LoadScene("NyanCatGame");
+        GameManager.S.ResetScore();
     }
 
     public void btn_Instructions()

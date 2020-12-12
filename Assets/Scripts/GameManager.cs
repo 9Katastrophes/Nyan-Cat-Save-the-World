@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum GameState { menu, getReady, playing, gameOver };
 
@@ -11,6 +12,11 @@ public class GameManager : MonoBehaviour
     public static GameManager S;
 
     public GameState gameState;
+
+    public TextMeshProUGUI scoreOverlay;
+    public TextMeshProUGUI messageOverlay;
+    public Button restartButton;
+    public Button menuButton;
 
     public int score = 0;
 
@@ -31,6 +37,19 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
+    private void Start()
+    {
+        SceneManager.activeSceneChanged += FindUIObjects;
+        if (SceneManager.GetActiveScene().name == "NyanCatGame")
+        {
+            scoreOverlay.text = "Score:" + score;
+            scoreOverlay.enabled = true;
+            messageOverlay.enabled = false;
+            restartButton.gameObject.SetActive(false);
+            menuButton.gameObject.SetActive(false);
+        }
+    }
+
     public void TriggerSecretMode()
     {
         infiniteMode = !infiniteMode;
@@ -40,5 +59,40 @@ public class GameManager : MonoBehaviour
     public void AwardPoints(int points)
     {
         score += points;
+        scoreOverlay.text = "Score:" + score;
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+    }
+
+    private void FindUIObjects(Scene current, Scene next)
+    {
+        if (next.name == "NyanCatGame")
+        {
+            scoreOverlay = GameObject.Find("ScoreOverlay").GetComponent<TextMeshProUGUI>();
+            messageOverlay = GameObject.Find("MessageOverlay").GetComponent<TextMeshProUGUI>();
+            scoreOverlay.text = "Score:" + score;
+            scoreOverlay.enabled = true;
+            messageOverlay.enabled = false;
+
+            restartButton = GameObject.Find("RestartButton").GetComponent<Button>();
+            menuButton = GameObject.Find("MenuButton").GetComponent<Button>();
+            restartButton.gameObject.SetActive(false);
+            menuButton.gameObject.SetActive(false);
+        }
+    }
+
+    public void GameOver(bool playerWon)
+    {
+        if (playerWon)
+            messageOverlay.text = "You Won!";
+        else
+            messageOverlay.text = "GameOver!";
+        messageOverlay.text += "\nFinal Score:" + score;
+        messageOverlay.enabled = true;
+        restartButton.gameObject.SetActive(true);
+        menuButton.gameObject.SetActive(true);
     }
 }
