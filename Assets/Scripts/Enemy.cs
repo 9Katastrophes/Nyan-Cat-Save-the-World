@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour
     private void Fire()
     {
         Instantiate(enemyBulletPrefab, this.transform);
+        SoundManager.S.PlayEnemyShootingSound();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

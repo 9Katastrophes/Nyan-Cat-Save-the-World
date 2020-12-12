@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour
     public float buttonVolume = 1.0f;
     public AudioClip playerShootingSound;
     public float playerShootingVolume = 1.0f;
+    public AudioClip enemyShootingSound;
+    public float enemyShootingVolume = 1.0f;
     public AudioClip enemyDeathSound;
     public float enemyDeathVolume = 1.0f;
     public AudioClip playerDeathSound;
@@ -43,6 +45,11 @@ public class SoundManager : MonoBehaviour
     public void PlayPlayerShootingSound()
     {
         audio.PlayOneShot(playerShootingSound, playerShootingVolume);
+    }
+
+    public void PlayEnemyShootingSound()
+    {
+        audio.PlayOneShot(enemyShootingSound, enemyShootingVolume);
     }
 
     public void PlayEnemyDeathSound()

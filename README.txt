@@ -7,6 +7,9 @@ Menu Starry Background: http://pixelartmaker.com/art/ccf4ad8ac3d50e0
 Game Background: https://imgur.com/gallery/z4Qqi/comment/1148689183
 
 Pew Sound: https://freesound.org/people/ani_music/sounds/219619/
+Laser Sound: https://freesound.org/people/Leszek_Szary/sounds/146725/
+Meow Sound: https://freesound.org/people/NoiseCollector/sounds/4914/
+Enemy Death Sound: https://freesound.org/people/InspectorJ/sounds/448226/
 Nyan Cat Music: https://www.youtube.com/watch?v=QH2-TGUlwu4&t=83s&ab_channel=NyanCat
 Nyan Cat GB Music: http://www.nyan.cat/index.php?cat=gb
 
