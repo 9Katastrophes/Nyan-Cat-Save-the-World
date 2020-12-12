@@ -38,27 +38,32 @@ public class MusicManager : MonoBehaviour
 
     private void ChangeMusic(Scene current, Scene next)
     {
-        if (current.name != "NyanCatGame" && next.name == "NyanCatGame")
+        if (next.name == "NyanCatGame")
             PlayMusic("game");
-        if (current.name == "NyanCatGame" && next.name != "NyanCatGame")
+        if (next.name == "Menu")
             PlayMusic("menu");
     }
 
     public void PlayMusic(string songName)
     {
+        AudioClip newSong = null;
         switch (songName)
         {
             case "menu":
-                audio.clip = menuMusic;
+                newSong = menuMusic;
                 break;
             case "game":
-                audio.clip = gameMusic;
+                newSong = gameMusic;
                 break;
             default:
                 Debug.Log("Invalid song name");
                 break;
         }
 
-        audio.Play();
+        if (audio.clip != newSong)
+        {
+            audio.clip = newSong;
+            audio.Play();
+        }
     }
 }
