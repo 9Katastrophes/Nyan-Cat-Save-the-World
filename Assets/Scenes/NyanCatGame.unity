@@ -1693,15 +1693,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe56d411efac4d46babc4ad5732bde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalEnemiesToSpawn: 20
+  totalEnemiesToSpawn: 100
   enemyPrefabs:
   - {fileID: 1058213067266400558, guid: ef34942d3a288497aa3cd2bc58e72015, type: 3}
   - {fileID: 179708959785469137, guid: bc972931e7d1d4336bd27966075c7923, type: 3}
-  bossPrefab: {fileID: 179708959785469137, guid: bc972931e7d1d4336bd27966075c7923, type: 3}
+  bossPrefab: {fileID: 2608750202373742749, guid: a4b18e06741d04a559df7562b14b63ea, type: 3}
   randomize: 0
+  infinite: 0
   maxOffset: 4
   waveTravelSpeed: 1
-  spawnRate: 3
+  spawnRate: 2.5
 --- !u!4 &1521885514
 Transform:
   m_ObjectHideFlags: 0
@@ -1710,7 +1711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521885512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.31, y: 0, z: 0}
+  m_LocalPosition: {x: 10.17, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

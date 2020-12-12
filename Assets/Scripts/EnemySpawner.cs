@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject bossPrefab;
     private int enemyPrefabIndex = 0;
     public bool randomize = false;
+    public bool infinite = false;
 
     public float maxOffset = 0.0f;
     public float waveTravelSpeed = 0.0f;
@@ -19,46 +20,62 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
+        infinite = GameManager.S.infiniteMode;
         timeLeftToSpawn = spawnRate;
         enemiesAlive = 0;
     }
 
     void Update()
     {
-        if (totalEnemiesToSpawn > 0)
+        if (GameManager.S.gameState == GameState.playing)
         {
-            if (timeLeftToSpawn > 0)
+            if (infinite)
             {
-                timeLeftToSpawn -= Time.deltaTime;
+                if (timeLeftToSpawn > 0)
+                    timeLeftToSpawn -= Time.deltaTime;
+                else
+                {
+                    SpawnEnemy();
+                    SpeedUp();
+                    timeLeftToSpawn = spawnRate;
+                }
             }
             else
             {
-                if (totalEnemiesToSpawn > 1)
-                    SpawnEnemy();
-                else // spawn the last enemy, the boss
-                    SpawnBoss();
-                timeLeftToSpawn = spawnRate;
+                if (totalEnemiesToSpawn > 0)
+                {
+                    if (timeLeftToSpawn > 0)
+                        timeLeftToSpawn -= Time.deltaTime;
+                    else
+                    {
+                        if (totalEnemiesToSpawn > 1)
+                            SpawnEnemy();
+                        else // spawn the last enemy, the boss
+                            SpawnBoss();
+                        timeLeftToSpawn = spawnRate;
+                    }
+                }
+                if (totalEnemiesToSpawn == 0 && enemiesAlive == 0)
+                {
+                    GameManager.S.GameOver(true);
+                }
             }
-        }
-        if (totalEnemiesToSpawn == 0 && enemiesAlive == 0)
-        {
-            GameManager.S.GameOver(true);
         }
     }
 
     private void SpawnEnemy()
     {
-        if (randomize)
-            enemyPrefabIndex = Random.Range(0, enemyPrefabs.Length);
-        else
-            enemyPrefabIndex = (enemyPrefabIndex + 1) % enemyPrefabs.Length;
-
         Vector3 randomizedY = new Vector3(0.0f, Random.Range(-maxOffset, maxOffset));
         GameObject enemy = Instantiate(enemyPrefabs[enemyPrefabIndex], this.transform.position + randomizedY, Quaternion.identity, this.transform);
         Rigidbody2D enemyRB = enemy.GetComponent<Rigidbody2D>();
         enemyRB.velocity = (Vector3.left * waveTravelSpeed);
         totalEnemiesToSpawn--;
         enemiesAlive++;
+
+        if (randomize)
+            enemyPrefabIndex = Random.Range(0, enemyPrefabs.Length);
+        else
+            enemyPrefabIndex = (enemyPrefabIndex + 1) % enemyPrefabs.Length;
     }
 
     private void SpawnBoss()
@@ -68,6 +85,11 @@ public class EnemySpawner : MonoBehaviour
         bossRB.velocity = (Vector3.left * waveTravelSpeed);
         totalEnemiesToSpawn--;
         enemiesAlive++;
+    }
+
+    private void SpeedUp()
+    {
+        spawnRate *= 0.99f;
     }
 
     public void EnemyKilled()

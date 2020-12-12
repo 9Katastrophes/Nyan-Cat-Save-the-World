@@ -15,4 +15,10 @@ public class EnemyBullet : MonoBehaviour
         rb.velocity = (Vector3.left * speed);
         Destroy(this.gameObject, 3.0f);
     }
+
+    public void ResetVelocity(Vector3 newVelocity)
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = newVelocity;
+    }
 }

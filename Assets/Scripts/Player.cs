@@ -11,14 +11,21 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Vector3 currentPosition = transform.position;
-        currentPosition.y += (Input.GetAxisRaw("Vertical") * speed * Time.deltaTime);
-        currentPosition.y = Mathf.Clamp(currentPosition.y, -maxOffset, maxOffset);
-        transform.position = currentPosition;
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (GameManager.S.gameState == GameState.playing)
         {
-            Shoot();
+            Vector3 currentPosition = transform.position;
+            currentPosition.y += (Input.GetAxisRaw("Vertical") * speed * Time.deltaTime);
+            currentPosition.y = Mathf.Clamp(currentPosition.y, -maxOffset, maxOffset);
+            transform.position = currentPosition;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Shoot();
+            }
+        }
+        if (GameManager.S.gameState == GameState.gameOver)
+        {
+            DisableMovement();
         }
     }
 
@@ -40,13 +47,13 @@ public class Player : MonoBehaviour
     public void DisableMovement()
     {
         GetComponent<Player>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public void Die()
     {
         Debug.Log("Player died!");
-        GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<Player>().enabled = false;
+        DisableMovement();
         GetComponent<Animator>().SetTrigger("Death");
         SoundManager.S.PlayPlayerDeathSound();
         GameManager.S.GameOver(false);

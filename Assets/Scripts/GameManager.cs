@@ -40,14 +40,14 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SceneManager.activeSceneChanged += FindUIObjects;
-        if (SceneManager.GetActiveScene().name == "NyanCatGame")
+        /*if (SceneManager.GetActiveScene().name == "NyanCatGame")
         {
             scoreOverlay.text = "Score:" + score;
             scoreOverlay.enabled = true;
             messageOverlay.enabled = false;
             restartButton.gameObject.SetActive(false);
             menuButton.gameObject.SetActive(false);
-        }
+        }*/
     }
 
     public void TriggerSecretMode()
@@ -81,11 +81,31 @@ public class GameManager : MonoBehaviour
             menuButton = GameObject.Find("MenuButton").GetComponent<Button>();
             restartButton.gameObject.SetActive(false);
             menuButton.gameObject.SetActive(false);
+
+            StartCoroutine(GetReady());
         }
+    }
+
+    public IEnumerator GetReady()
+    {
+        gameState = GameState.getReady;
+
+        if (infiniteMode)
+            messageOverlay.text = "Infinite Mode!\nGet Ready!";
+        else
+            messageOverlay.text = "Get Ready!";
+        messageOverlay.enabled = true;
+
+        yield return new WaitForSeconds(2.0f);
+
+        messageOverlay.enabled = false;
+        gameState = GameState.playing;
     }
 
     public void GameOver(bool playerWon)
     {
+        gameState = GameState.gameOver;
+
         if (playerWon)
             messageOverlay.text = "You Won!";
         else

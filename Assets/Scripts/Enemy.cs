@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum EnemyType { normal, rapidfire};
+public enum EnemyType { normal, rapidfire, boss};
 
 public class Enemy : MonoBehaviour
 {
@@ -12,8 +12,9 @@ public class Enemy : MonoBehaviour
     public int direction = -1; // initial y direction for enemies
     public float maxOffset = 0;
 
-    public int value = 0;
     public EnemyType type = EnemyType.normal;
+    public int health = 1;
+    public int value = 0;
 
     public GameObject enemyBulletPrefab;
     public float fireRate = 0.0f;
@@ -69,7 +70,11 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Destroy(collision.gameObject);
-            Die();
+            SoundManager.S.PlayEnemyDeathSound();
+            health--;
+
+            if (health <= 0)
+                Die();
         }
         if (collision.gameObject.tag == "Back Wall") // went out of bounds
         {
@@ -86,7 +91,6 @@ public class Enemy : MonoBehaviour
         GetComponent<CircleCollider2D>().enabled = false;
         speed = 0;
         GetComponent<Animator>().SetTrigger("Death");
-        SoundManager.S.PlayEnemyDeathSound();
         GameManager.S.AwardPoints(value);
     }
 }

@@ -101,8 +101,9 @@ MonoBehaviour:
   speed: 3
   direction: -1
   maxOffset: 4
-  value: 50
   type: 1
+  health: 1
+  value: 100
   enemyBulletPrefab: {fileID: 6410408217971707674, guid: 3a9c0d86205be4509a473082fde7816b, type: 3}
   fireRate: 1
   randomFireOffset: 1
