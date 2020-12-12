@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private GameObject enemySpawner;
+
     public float speed = 0;
-    public int direction = -1;
+    public int direction = -1; // initial y direction for enemies
     public float maxOffset = 0;
 
     public int value = 0;
 
     public GameObject enemyBulletPrefab;
-    public float fireRate = 5.0f;
+    public float fireRate = 0.0f;
     public float randomFireOffset = 0.0f;
     private float timeLeftToShoot;
 
-    // Start is called before the first frame update
     void Start()
     {
         timeLeftToShoot = fireRate + Random.Range(0.0f, randomFireOffset);
+        enemySpawner = GameObject.Find("EnemySpawner");
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Mathf.Abs(transform.position.y) >= maxOffset)
@@ -55,12 +56,18 @@ public class Enemy : MonoBehaviour
             Destroy(collision.gameObject);
             Die();
         }
+        if (collision.gameObject.tag == "Back Wall") // went out of bounds
+        {
+            Destroy(this.gameObject);
+            enemySpawner.GetComponent<EnemySpawner>().EnemyKilled();
+        }
     }
 
     private void Die()
     {
         Debug.Log("Enemy died!");
         Destroy(this.gameObject, 0.5f);
+        enemySpawner.GetComponent<EnemySpawner>().EnemyKilled();
         GetComponent<CircleCollider2D>().enabled = false;
         speed = 0;
         GetComponent<Animator>().SetTrigger("Death");
