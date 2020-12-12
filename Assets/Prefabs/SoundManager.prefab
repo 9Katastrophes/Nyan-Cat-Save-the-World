@@ -49,10 +49,12 @@ MonoBehaviour:
   buttonVolume: 0.5
   playerShootingSound: {fileID: 8300000, guid: e9c712e064ad34cdc9cffffe7d220649, type: 3}
   playerShootingVolume: 0.8
-  enemyDeathSound: {fileID: 8300000, guid: 6fde8ab4adbc94110847c9e7e7224ec2, type: 3}
-  enemyDeathVolume: 1
-  playerDeathSound: {fileID: 8300000, guid: fe6a9bcab1c01453da6d0c13203ae932, type: 3}
-  playerDeathVolume: 1
+  enemyShootingSound: {fileID: 8300000, guid: 87219b5ac594145c3af7373b47c4df4c, type: 3}
+  enemyShootingVolume: 1
+  enemyDeathSound: {fileID: 8300000, guid: b506333daaf744c0ab367a2e0874d7d9, type: 3}
+  enemyDeathVolume: 0.5
+  playerDeathSound: {fileID: 8300000, guid: cc6fe7b3b42cc450491ee4f80f745cb3, type: 3}
+  playerDeathVolume: 0.8
 --- !u!82 &6242690691203755073
 AudioSource:
   m_ObjectHideFlags: 0

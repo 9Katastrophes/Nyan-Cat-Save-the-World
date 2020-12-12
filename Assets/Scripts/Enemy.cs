@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyType { normal, rapidfire};
+
 public class Enemy : MonoBehaviour
 {
     private GameObject enemySpawner;
@@ -11,6 +13,7 @@ public class Enemy : MonoBehaviour
     public float maxOffset = 0;
 
     public int value = 0;
+    public EnemyType type = EnemyType.normal;
 
     public GameObject enemyBulletPrefab;
     public float fireRate = 0.0f;
@@ -39,15 +42,26 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Fire();
+            StartCoroutine(Fire());
             timeLeftToShoot = fireRate + Random.Range(0.0f, randomFireOffset);
         }
     }
 
-    private void Fire()
+    private IEnumerator Fire()
     {
-        Instantiate(enemyBulletPrefab, this.transform);
-        SoundManager.S.PlayEnemyShootingSound();
+        if (type == EnemyType.normal)
+        {
+            Instantiate(enemyBulletPrefab, this.transform);
+            SoundManager.S.PlayEnemyShootingSound();
+        }
+        else if (type == EnemyType.rapidfire)
+        {
+            Instantiate(enemyBulletPrefab, this.transform);
+            SoundManager.S.PlayEnemyShootingSound();
+            yield return new WaitForSeconds(1.0f);
+            Instantiate(enemyBulletPrefab, this.transform);
+            SoundManager.S.PlayEnemyShootingSound();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

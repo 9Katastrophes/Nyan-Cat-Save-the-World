@@ -122,8 +122,8 @@ MonoBehaviour:
   maxOffset: 4
   value: 50
   enemyBulletPrefab: {fileID: 6410408217971707674, guid: 3a9c0d86205be4509a473082fde7816b, type: 3}
-  fireRate: 2
-  randomFireOffset: 2
+  fireRate: 1
+  randomFireOffset: 1
 --- !u!58 &1058213067266400722
 CircleCollider2D:
   m_ObjectHideFlags: 0
