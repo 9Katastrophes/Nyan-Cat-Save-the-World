@@ -63,6 +63,25 @@ public class Enemy : MonoBehaviour
             Instantiate(enemyBulletPrefab, this.transform);
             SoundManager.S.PlayEnemyShootingSound();
         }
+        else if (type == EnemyType.boss)
+        {
+            StartCoroutine(AllAroundFire());
+        }
+    }
+
+    private IEnumerator AllAroundFire()
+    {
+        int totalBullets = 30;
+        float angleDifference = 360.0f / totalBullets;
+        float angle = 0;
+        for (int i = 0; i < totalBullets; i++)
+        {
+            Quaternion newRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            GameObject bullet = Instantiate(enemyBulletPrefab, this.transform.position, newRotation);
+            bullet.GetComponent<EnemyBullet>().ResetVelocity(Quaternion.Euler(0, 0, angle) * Vector2.left);
+            angle += angleDifference;
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

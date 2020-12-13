@@ -39,15 +39,20 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SceneManager.activeSceneChanged += FindUIObjects;
-        /*if (SceneManager.GetActiveScene().name == "NyanCatGame")
+        SceneManager.activeSceneChanged += SetUpGame;
+
+        // this is needed if we initially start in the game scene
+        if (SceneManager.GetActiveScene().name == "NyanCatGame")
         {
+            ResetScore();
             scoreOverlay.text = "Score:" + score;
             scoreOverlay.enabled = true;
             messageOverlay.enabled = false;
             restartButton.gameObject.SetActive(false);
             menuButton.gameObject.SetActive(false);
-        }*/
+
+            StartCoroutine(GetReady());
+        }
     }
 
     public void TriggerSecretMode()
@@ -67,10 +72,11 @@ public class GameManager : MonoBehaviour
         score = 0;
     }
 
-    private void FindUIObjects(Scene current, Scene next)
+    private void SetUpGame(Scene current, Scene next)
     {
         if (next.name == "NyanCatGame")
         {
+            ResetScore();
             scoreOverlay = GameObject.Find("ScoreOverlay").GetComponent<TextMeshProUGUI>();
             messageOverlay = GameObject.Find("MessageOverlay").GetComponent<TextMeshProUGUI>();
             scoreOverlay.text = "Score:" + score;
@@ -84,6 +90,8 @@ public class GameManager : MonoBehaviour
 
             StartCoroutine(GetReady());
         }
+        else
+            gameState = GameState.menu;
     }
 
     public IEnumerator GetReady()
@@ -109,7 +117,7 @@ public class GameManager : MonoBehaviour
         if (playerWon)
             messageOverlay.text = "You Won!";
         else
-            messageOverlay.text = "GameOver!";
+            messageOverlay.text = "Game Over!";
         messageOverlay.text += "\nFinal Score:" + score;
         messageOverlay.enabled = true;
         restartButton.gameObject.SetActive(true);

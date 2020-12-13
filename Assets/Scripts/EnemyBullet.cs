@@ -6,19 +6,23 @@ public class EnemyBullet : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed;
+    private Vector2 velocity;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        velocity = Vector2.left * speed;
+    }
+
     void Start()
     {
         this.transform.parent = null;
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = (Vector3.left * speed);
+        rb.velocity = velocity;
         Destroy(this.gameObject, 3.0f);
     }
 
-    public void ResetVelocity(Vector3 newVelocity)
+    public void ResetVelocity(Vector2 newVelocity)
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = newVelocity;
+        velocity = (newVelocity * speed);          
     }
 }

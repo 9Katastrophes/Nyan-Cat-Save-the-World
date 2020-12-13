@@ -50,8 +50,11 @@ public class EnemySpawner : MonoBehaviour
                     {
                         if (totalEnemiesToSpawn > 1)
                             SpawnEnemy();
-                        else // spawn the last enemy, the boss
+                        else
+                        { // spawn the last enemy, the boss
+                            waveTravelSpeed *= 0.5f; // slow boss down
                             SpawnBoss();
+                        }
                         timeLeftToSpawn = spawnRate;
                     }
                 }
