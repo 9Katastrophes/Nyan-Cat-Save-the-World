@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 9e7dcaf5e20d7400b959581be48b1711
+    path: Assets/Scenes/Menu.unity
+    guid: e405d781785624ac4ab390118a56482d
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: f19c28e13b9a042b7a3c3d4273877d24
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: e405d781785624ac4ab390118a56482d
+    path: Assets/Scenes/Credits.unity
+    guid: 9e7dcaf5e20d7400b959581be48b1711
   - enabled: 1
     path: Assets/Scenes/NyanCatGame.unity
     guid: 375bec89c4a954d478c76e724733b180
