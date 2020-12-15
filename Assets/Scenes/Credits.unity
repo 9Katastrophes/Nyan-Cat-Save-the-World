@@ -329,6 +329,8 @@ MonoBehaviour:
   buttonVolume: 1
   playerShootingSound: {fileID: 0}
   playerShootingVolume: 1
+  shieldSound: {fileID: 0}
+  shieldVolume: 1
   enemyShootingSound: {fileID: 0}
   enemyShootingVolume: 1
   enemyDeathSound: {fileID: 0}
@@ -637,7 +639,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 167509933}
   m_Direction: 2
   m_Value: 0.99999976
-  m_Size: 0.18181242
+  m_Size: 0.16855665
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1463,7 +1465,8 @@ MonoBehaviour:
     Sprite: \nLink:https://www.pikpng.com/downpngs/obbwbx_fireball-clipart-pixel-sprite-fireball-png-gif-pixel/\n\nMenu
     Starry Background:\nCreator ID: b6107\nLink:http://pixelartmaker.com/art/ccf4ad8ac3d50e0\n\nGame
     Background: \nSubmitter:YouCanBreatheYouCanBlinkYouCanCryHellYoureAllGonnaBeDoingThat\nLink:https://imgur.com/gallery/z4Qqi/comment/1148689183\n\nPew
-    Sound: \nSubmitter: ani_music\nLink:https://freesound.org/people/ani_music/sounds/219619/\n\nLaser
+    Sound: \nSubmitter: ani_music\nLink:https://freesound.org/people/ani_music/sounds/219619/\n\nShield
+    Boop Sound:\nSubmitter: SomeGuy22\nLink:https://freesound.org/people/SomeGuy22/sounds/431327/\n\nLaser
     Sound: \nSubmitter: Leszek_Szary\nLink:https://freesound.org/people/Leszek_Szary/sounds/146725/\n\nMeow
     Sound: \nSubmitter: NoiseCollector\nLink:https://freesound.org/people/NoiseCollector/sounds/4914/\n\nEnemy
     Death Sound: \nSubmitter: InspectorJ\nLink:https://freesound.org/people/InspectorJ/sounds/448226/\n\nNyan

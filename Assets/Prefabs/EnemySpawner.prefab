@@ -51,5 +51,5 @@ MonoBehaviour:
   randomize: 0
   infinite: 0
   maxOffset: 4
-  waveTravelSpeed: 1
+  waveTravelSpeed: 1.5
   spawnRate: 2

@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public float speed;
     public float maxOffset;
     public GameObject playerBulletPrefab;
+    public GameObject shieldPrefab;
+    public bool hasShield = false;
 
     void Update()
     {
@@ -21,6 +23,10 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Shoot();
+            }
+            if (!hasShield && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+            {
+                MakeShield();
             }
         }
         if (GameManager.S.gameState == GameState.gameOver)
@@ -42,6 +48,13 @@ public class Player : MonoBehaviour
     {
         Instantiate(playerBulletPrefab, this.transform);
         SoundManager.S.PlayPlayerShootingSound();
+    }
+
+    public void MakeShield()
+    {
+        hasShield = true;
+        Instantiate(shieldPrefab, this.transform);
+        SoundManager.S.PlayShieldSound();
     }
 
     public void DisableMovement()

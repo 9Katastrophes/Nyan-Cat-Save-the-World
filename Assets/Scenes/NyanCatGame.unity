@@ -563,6 +563,8 @@ MonoBehaviour:
   speed: 10
   maxOffset: 4
   playerBulletPrefab: {fileID: 3086076526754504715, guid: 177a635e251a1457f9964879b046a4ed, type: 3}
+  shieldPrefab: {fileID: 5429149226198987998, guid: 37cde677a460349b8907ee765c763957, type: 3}
+  hasShield: 0
 --- !u!95 &440451222
 Animator:
   serializedVersion: 3

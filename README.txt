@@ -19,6 +19,9 @@ Game Background:
 Pew Sound: 
 	Submitter: ani_music
 	Link: https://freesound.org/people/ani_music/sounds/219619/
+Shield Boop Sound:
+	Submitter: SomeGuy22
+	Link: https://freesound.org/people/SomeGuy22/sounds/431327/
 Laser Sound: 
 	Submitter: Leszek_Szary
 	Link: https://freesound.org/people/Leszek_Szary/sounds/146725/

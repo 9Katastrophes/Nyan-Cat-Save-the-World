@@ -49,6 +49,8 @@ MonoBehaviour:
   buttonVolume: 0.5
   playerShootingSound: {fileID: 8300000, guid: e9c712e064ad34cdc9cffffe7d220649, type: 3}
   playerShootingVolume: 0.7
+  shieldSound: {fileID: 8300000, guid: a15741989be8d405ea0623050dfa6b54, type: 3}
+  shieldVolume: 0.8
   enemyShootingSound: {fileID: 8300000, guid: 87219b5ac594145c3af7373b47c4df4c, type: 3}
   enemyShootingVolume: 1
   enemyDeathSound: {fileID: 8300000, guid: b506333daaf744c0ab367a2e0874d7d9, type: 3}

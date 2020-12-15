@@ -254,6 +254,8 @@ MonoBehaviour:
   buttonVolume: 1
   playerShootingSound: {fileID: 0}
   playerShootingVolume: 1
+  shieldSound: {fileID: 0}
+  shieldVolume: 1
   enemyShootingSound: {fileID: 0}
   enemyShootingVolume: 1
   enemyDeathSound: {fileID: 0}
@@ -1307,8 +1309,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Press W or UP to move up.\nPress S or DOWN to move \ndown. Dodge enemy
-    bullets \nand return fire using\nSPACE. Pepper Lord wants\nto make all food spicy!\nStop
-    his reign of terror\nfor the sake of all that \nis sweet!"
+    bullets \nand return fire using\nSPACE. Shield using SHIFT.\nPepper Lord wants
+    to make all \nfood spicy! Stop his reign of \nterror for the sake of all \nthat
+    is sweet!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffeb639b6bbf64071b7529eef7966b45, type: 2}
   m_sharedMaterial: {fileID: 4021229293879927186, guid: ffeb639b6bbf64071b7529eef7966b45, type: 2}
@@ -1335,8 +1338,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
