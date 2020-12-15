@@ -27,7 +27,7 @@ Meow Sound:
 	Link: https://freesound.org/people/NoiseCollector/sounds/4914/
 Enemy Death Sound: 
 	Submitter: InspectorJ
-	https://freesound.org/people/InspectorJ/sounds/448226/
+	Link: https://freesound.org/people/InspectorJ/sounds/448226/
 Nyan Cat Music: 
 	Owner: Nyan Cat / PRGUITARMAN
 	Link: https://www.youtube.com/watch?v=QH2-TGUlwu4&t=83s&ab_channel=NyanCat

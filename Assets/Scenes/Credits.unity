@@ -327,6 +327,14 @@ MonoBehaviour:
   audio: {fileID: 92454425}
   buttonSound: {fileID: 8300000, guid: e9c712e064ad34cdc9cffffe7d220649, type: 3}
   buttonVolume: 1
+  playerShootingSound: {fileID: 0}
+  playerShootingVolume: 1
+  enemyShootingSound: {fileID: 0}
+  enemyShootingVolume: 1
+  enemyDeathSound: {fileID: 0}
+  enemyDeathVolume: 1
+  playerDeathSound: {fileID: 0}
+  playerDeathVolume: 1
 --- !u!4 &92454427
 Transform:
   m_ObjectHideFlags: 0
@@ -490,6 +498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92184c1bcffd247608456b4a69ea6b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
+  scoreOverlay: {fileID: 0}
+  messageOverlay: {fileID: 0}
+  restartButton: {fileID: 0}
+  menuButton: {fileID: 0}
+  score: 0
   infiniteMode: 0
 --- !u!4 &588267071
 Transform:
@@ -622,8 +636,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 167509934}
   m_HandleRect: {fileID: 167509933}
   m_Direction: 2
-  m_Value: 0.99999994
-  m_Size: 0.06422076
+  m_Value: 0.99999976
+  m_Size: 0.18181242
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1443,62 +1457,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Made by Katherine Wang
-
-    53-353 Fall 2020
-
-
-    ~~Asset Attributions~~
-
-
-    Lorem
-    ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor ac diam
-    at faucibus. Curabitur quis lectus et tellus dapibus sollicitudin sed sed diam.
-    Quisque finibus sapien urna, imperdiet auctor dolor luctus suscipit. Cras consequat
-    ante sit amet leo ultricies, quis pretium lacus rutrum. Cras aliquet ipsum rutrum
-    arcu pharetra tincidunt. Suspendisse sagittis vel ligula nec suscipit. Sed vitae
-    fringilla lacus. Sed nec purus at nibh faucibus pulvinar.
-
-
-    Suspendisse odio
-    leo, vestibulum eget diam a, aliquet placerat sem. Proin gravida justo vel nunc
-    vulputate, eget feugiat massa pharetra. Orci varius natoque penatibus et magnis
-    dis parturient montes, nascetur ridiculus mus. Aenean ac augue tincidunt, tempor
-    justo eu, congue lorem. Nunc nec rutrum orci. Aliquam luctus dolor quis lobortis
-    ornare. Nulla ut euismod odio. Suspendisse faucibus dui est, in suscipit orci
-    facilisis in. Nunc non massa pretium, fringilla purus vel, placerat nisl. Mauris
-    et ex sem. Maecenas nec risus cursus lorem posuere suscipit. Sed maximus elit
-    vel urna ullamcorper, ac ullamcorper eros malesuada.
-
-
-    Phasellus consequat
-    libero viverra egestas pulvinar. Nulla gravida condimentum leo eget sollicitudin.
-    Nam a elementum metus. Duis nec nisi at tortor sollicitudin dictum vel nec dui.
-    Mauris ipsum est, finibus non suscipit eget, cursus elementum sem. Ut in diam
-    dui. Quisque nec facilisis leo. Nullam dapibus, neque quis feugiat porta, turpis
-    metus maximus lacus, eu facilisis nunc augue eu tellus. Suspendisse lobortis
-    mi eget pretium dapibus.
-
-
-    Fusce vitae mauris sed elit posuere consequat.
-    Etiam vestibulum mattis augue eget euismod. Nulla et condimentum metus, ut consequat
-    elit. Ut arcu augue, vestibulum eu ligula quis, bibendum ultrices purus. Suspendisse
-    fermentum at elit a hendrerit. In iaculis, ipsum ac efficitur venenatis, mauris
-    metus rutrum quam, a lacinia nunc nulla non nibh. Integer non ex risus. Nunc
-    lorem nisl, ultrices porta sapien et, ultricies mattis neque. Nunc varius augue
-    ut dolor pretium luctus. Aenean congue scelerisque mi sit amet hendrerit. Pellentesque
-    nec nunc augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-    posuere cubilia curae; Praesent posuere justo et malesuada mattis.
-
-
-    Fusce
-    viverra lorem velit, et hendrerit nulla vestibulum eget. Aenean venenatis varius
-    venenatis. Fusce aliquet accumsan tempus. Donec posuere, mi nec viverra lobortis,
-    enim nunc dapibus nisl, eget rhoncus leo risus quis odio. Praesent rutrum orci
-    bibendum enim molestie, mollis eleifend neque elementum. Nam vel felis hendrerit,
-    pellentesque turpis ac, semper odio. Praesent sed magna vestibulum, tincidunt
-    arcu in, egestas justo. Maecenas tincidunt fermentum urna ut tincidunt. Integer
-    id urna felis.'
+  m_text: "Made by Katherine Wang\n53-353 Fall 2020\n\n~~Asset Attributions~~\n\nNyan
+    Cat Sprites:\nGame: Nyan Cat: Lost in Space\nSubmitter: Chonk-Man\nLink:https://www.spriters-resource.com/pc_computer/nyancatlostinspace/sheet/139234/\n\nPepper
+    Sprites: \nGame: Cookie Run: OvenBreak\nSubmitter: Rainbow Question Mark\nLink:https://www.spriters-resource.com/mobile/cookierunovenbreak/sheet/129453/\n\nFireball
+    Sprite: \nLink:https://www.pikpng.com/downpngs/obbwbx_fireball-clipart-pixel-sprite-fireball-png-gif-pixel/\n\nMenu
+    Starry Background:\nCreator ID: b6107\nLink:http://pixelartmaker.com/art/ccf4ad8ac3d50e0\n\nGame
+    Background: \nSubmitter:YouCanBreatheYouCanBlinkYouCanCryHellYoureAllGonnaBeDoingThat\nLink:https://imgur.com/gallery/z4Qqi/comment/1148689183\n\nPew
+    Sound: \nSubmitter: ani_music\nLink:https://freesound.org/people/ani_music/sounds/219619/\n\nLaser
+    Sound: \nSubmitter: Leszek_Szary\nLink:https://freesound.org/people/Leszek_Szary/sounds/146725/\n\nMeow
+    Sound: \nSubmitter: NoiseCollector\nLink:https://freesound.org/people/NoiseCollector/sounds/4914/\n\nEnemy
+    Death Sound: \nSubmitter: InspectorJ\nLink:https://freesound.org/people/InspectorJ/sounds/448226/\n\nNyan
+    Cat Music: \nOwner: Nyan Cat / PRGUITARMAN\nLink:https://www.youtube.com/watch?v=QH2-TGUlwu4&t=83s&ab_channel=NyanCat\n\nNyan
+    Cat GB Music: \nOwner: Nyan Cat / PRGUITARMAN\nLink:http://www.nyan.cat/index.php?cat=gb\n\nFonts:
+    https://fonts.google.com/specimen/Press+Start+2P?category=Display,Monospace&thickness=8&preview.text=Nyan%20Cat%20Save%20the%20World&preview.text_type=custom#glyphs"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffeb639b6bbf64071b7529eef7966b45, type: 2}
   m_sharedMaterial: {fileID: 4021229293879927186, guid: ffeb639b6bbf64071b7529eef7966b45, type: 2}
@@ -1525,8 +1496,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
