@@ -252,6 +252,14 @@ MonoBehaviour:
   audio: {fileID: 92454425}
   buttonSound: {fileID: 8300000, guid: e9c712e064ad34cdc9cffffe7d220649, type: 3}
   buttonVolume: 1
+  playerShootingSound: {fileID: 0}
+  playerShootingVolume: 1
+  enemyShootingSound: {fileID: 0}
+  enemyShootingVolume: 1
+  enemyDeathSound: {fileID: 0}
+  enemyDeathVolume: 1
+  playerDeathSound: {fileID: 0}
+  playerDeathVolume: 1
 --- !u!4 &92454427
 Transform:
   m_ObjectHideFlags: 0
@@ -861,6 +869,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92184c1bcffd247608456b4a69ea6b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
+  scoreOverlay: {fileID: 0}
+  messageOverlay: {fileID: 0}
+  restartButton: {fileID: 0}
+  menuButton: {fileID: 0}
+  score: 0
   infiniteMode: 0
 --- !u!4 &1171918352
 Transform:
@@ -1269,7 +1283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -152, y: 37}
+  m_AnchoredPosition: {x: -152, y: 46}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883275025
@@ -1293,8 +1307,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Press W or UP to move up.\nPress S or DOWN to move \ndown. Dodge enemy
-    bullets \nand return fire using\nSPACE. Stop Pepper Lord's\nspicy reign of terror\nand
-    protect all that is\nsweet!"
+    bullets \nand return fire using\nSPACE. Pepper Lord wants\nto make all food spicy!\nStop
+    his reign of terror\nfor the sake of all that \nis sweet!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffeb639b6bbf64071b7529eef7966b45, type: 2}
   m_sharedMaterial: {fileID: 4021229293879927186, guid: ffeb639b6bbf64071b7529eef7966b45, type: 2}

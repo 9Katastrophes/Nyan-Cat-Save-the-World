@@ -98,11 +98,15 @@ public class GameManager : MonoBehaviour
     {
         gameState = GameState.getReady;
 
+        messageOverlay.text = "Stop\nPepper Lord!";
+        messageOverlay.enabled = true;
+
+        yield return new WaitForSeconds(2.0f);
+
         if (infiniteMode)
             messageOverlay.text = "Infinite Mode!\nGet Ready!";
         else
             messageOverlay.text = "Get Ready!";
-        messageOverlay.enabled = true;
 
         yield return new WaitForSeconds(2.0f);
 
